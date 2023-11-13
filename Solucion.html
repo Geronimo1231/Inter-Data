@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizador de Excel</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+</head>
+<body class="seccion-fondo">
+
+  <input type="file" id="fileInput" accept=".xlsx, .xls" onchange="loadExcelFile()">
+  <center>
+  <a href="https://docs.google.com/spreadsheets/d/1jEpTeK3GG3fR96BCPV9qNayoaGXABDyD/edit?usp=sharing&ouid=102222630186347720002&rtpof=true&sd=true" class="btn-cta">BASE DE DATOS</a>
+  <a href="https://drive.google.com/uc?export=download&id=1jEpTeK3GG3fR96BCPV9qNayoaGXABDyD" download="mi-archivo.pdf"class="btn-cta">Descargar</a><br> <br> <br> <br> <br> <br> 
+  <iframe src="https://docs.google.com/spreadsheets/d/1jEpTeK3GG3fR96BCPV9qNayoaGXABDyD/preview" height="800px" width="99%"></iframe>
+   </center>
+  <div id="excelData"></div>
+
+  <script>
+    function loadExcelFile() {
+      const fileInput = document.getElementById('fileInput');
+      const excelDataContainer = document.getElementById('excelData');
+
+      const file = fileInput.files[0];
+
+      if (file) {
+        const reader = new FileReader();
+
+        reader.onload = function (e) {
+          const data = e.target.result;
+          const workbook = XLSX.read(data, { type: 'binary' });
+
+          let htmlContent = '<table border="1">';
+          const sheet = workbook.Sheets[workbook.SheetNames[0]];
+          const range = XLSX.utils.decode_range(sheet['!ref']);
+
+          for (let R = range.s.r; R <= range.e.r; ++R) {
+            htmlContent += '<tr>';
+            for (let C = range.s.c; C <= range.e.c; ++C) {
+              const cell_address = { c: C, r: R };
+              const cell_ref = XLSX.utils.encode_cell(cell_address);
+              const cell = sheet[cell_ref];
+              htmlContent += `<td>${cell ? cell.v : ''}</td>`;
+            }
+            htmlContent += '</tr>';
+          }
+
+          htmlContent += '</table>';
+          excelDataContainer.innerHTML = htmlContent;
+        };
+
+        reader.readAsBinaryString(file);
+      } else {
+        alert('Por favor, selecciona un archivo Excel.');
+      }
+    }
+  </script>
+
+</body>
+</html>
