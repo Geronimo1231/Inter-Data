@@ -86,9 +86,10 @@ p {
 }
 
 .carrusel img {
-	text-align: center;
-    width: 20%;
+    text-align: center;
+    width: 50%;
     object-fit: cover;
+    height: 40%;
     cursor: pointer;
 }
 
