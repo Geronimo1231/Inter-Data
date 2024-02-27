@@ -1,8 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #fff;
-    background: linear-gradient(90deg, #5e17eb 0%, #41027b 100%);
+    background: linear-gradient(to bottom, #000, #8c52ff);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1, h2 {
