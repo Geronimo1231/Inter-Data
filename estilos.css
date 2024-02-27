@@ -4,6 +4,8 @@ body, html {
     color: white;
     display: flex;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +13,7 @@ body, html {
 }
 .container {
     width: 80%;
-    margin: 0 auto;
+    
     padding: 20px 0;
 }
 header {
