@@ -1,20 +1,62 @@
-/* Estilos generales */
-body, html {
-    background: linear-gradient(to bottom, #000, #8c52ff);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: linear-gradient(90deg, #5e17eb 0%, #41027b 100%);
 }
-.container {
-    width: 80%;
-    
-    padding: 20px 0;
+
+h1, h2 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #b39ddb;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Sections styles */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 header {
     background: linear-gradient(to right, #6a0dad, #000);
@@ -123,16 +165,7 @@ section {
     text-align: center;
 }
 
-h1, h2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 
-p {
-    font-size: 1.2rem;
-    max-width: 600px;
-}
 
 /* Estilos para el carrusel */
 .carrusel {
