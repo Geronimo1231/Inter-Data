@@ -3,8 +3,6 @@ body, html {
     background: linear-gradient(to bottom, #000, #8c52ff);
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     padding: 0;
