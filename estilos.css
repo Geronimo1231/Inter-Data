@@ -31,27 +31,7 @@ a:hover {
 }
 
 /* Header styles */
- header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
 
-        .logo {
-            text-align: center;
-            flex-basis: 150px;
-        }
-
-        nav ul {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav li {
-            margin-right: 10px;
-        }
 /* Sections styles */
 section {
     padding: 40px;
