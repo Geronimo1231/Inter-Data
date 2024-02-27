@@ -1,5 +1,5 @@
-body {
-    background: linear-gradient(to bottom, #000, #8c52ff);
+body, html {
+  background: linear-gradient(to bottom, #000, #8c52ff);
     color: white;
     display: flex;
     flex-direction: column;
@@ -11,6 +11,18 @@ body {
     box-sizing: border-box;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Estilos para el header */
+header {
+    background: linear-gradient(to right, #6a0dad, #000);
+    color: white;
+    padding: 20px 0;
+}
 h1, h2 {
     font-weight: 300;
     margin-bottom: 10px;
@@ -25,38 +37,26 @@ a {
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
-
-a:hover {
-    color: #b39ddb;
+.logo img {
+   text-align: center;
+    flex-basis: 150px;
+    max-width: 150px;
 }
-
-
-section {
-    padding: 40px;
-    text-align: center;
+.raya{
+	background-color: #2B3499 ;
+	height: 5px;
+	border:none;
 }
-
-/* Footer styles */
-footer {
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-header {
-    background: linear-gradient(to right, #6a0dad, #000);
-    color: white;
-    padding: 20px 0;
-}
-
 header h1 {
     margin: 0;
     font-size: 2.5em;
 }
-
+.seccion-fondo {
+    background-color: #FFEFDC ;
+    background-position: center;
+    text-align: center;
+    
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -101,41 +101,6 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-
-.raya{
-	background-color: #2B3499 ;
-	height: 5px;
-	border:none;
-}
-.seccion-fondo {
-    background-color: #FFEFDC ;
-    background-position: center;
-    text-align: center;
-    
-}
-
-
-
-.logo img {
-   text-align: center;
-    flex-basis: 150px;
-    max-width: 150px;
-}
-
-nav ul {
- display: flex;
- list-style-type: none;
- padding: 0;
- margin: 0;
-}
-
-nav ul li {
-  margin-right: 10px;
-}
-
-
-
-/* Estilos de llamado a la acción (CTA) */
 .btn-cta {
     display: inline-block;
     background-color: #FF6C22;
@@ -152,60 +117,3 @@ section {
     padding: 3rem 0;
     text-align: center;
 }
-
-
-
-/* Estilos para el carrusel */
-.carrusel {
-    display: flex;
-    overflow: hidden;
-}
-
-.carrusel-item {
-	flex:1;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carrusel img {
-    text-align: center;
-    width: 50%;
-    object-fit: cover;
-    height: 40%;
-    cursor: pointer;
-}
-
-.carrusel-item:hover {
-    transform: scale(1.1);
-}
-
-/* Estilos para la información del carrusel */
-#info-carrusel {
-    margin-top: 20px;
-}
-
-/* Estilos de pie de página */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
-   .btn-cta {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            line-height: 1.5;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: all 0.3s ease-in-out;
-            background-color: #5A0076;
-            color: white;
-            width: 100px; /* Set a fixed width */
-            height: 40px; /* Set a fixed height */
-        }
-
-        .btn-cta:hover {
-            background-color: #5A0076;
-        }
