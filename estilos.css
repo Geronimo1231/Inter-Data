@@ -30,9 +30,7 @@ a:hover {
     color: #b39ddb;
 }
 
-/* Header styles */
 
-/* Sections styles */
 section {
     padding: 40px;
     text-align: center;
@@ -119,23 +117,23 @@ footer {
 
 
 .logo img {
+   text-align: center;
+    flex-basis: 150px;
     max-width: 150px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+ display: flex;
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  margin-right: 10px;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+
 
 /* Estilos de llamado a la acción (CTA) */
 .btn-cta {
