@@ -81,18 +81,9 @@ header nav li {
     padding-top: 3rem;
 }
 .logo img {
-	text-align: center;
-    flex-basis: 150px;
-	display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem 2rem;
-    z-index: 100;
-    max-width: 150px;
+text-align: center;
+flex-basis: 150px;
+	
 }
 nav {
             float: left;
