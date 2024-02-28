@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #000, #8c52ff);
+    background: linear-gradient(to bottom, #8c52ff, #000);
     color: white;
     display: flex;
     flex-direction: column;
@@ -40,10 +40,10 @@ p {
 	border:none;
 }
 header {
-    background: linear-gradient(to right, #6a0dad, #000);
     color: white;
     padding: 20px 0;
-    display: flex;
+	text-align: center;
+	display: flex;
     justify-content: space-between;
     position: relative;
 }
@@ -76,17 +76,9 @@ header nav li {
     padding-top: 3rem;
 }
 .logo img {
-max-width: 100px;
+	width: 230px;
+	height: 200px;
 	
-display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem 2rem;
-    z-index: 100;
 }
 nav {
             float: left;
