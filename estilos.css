@@ -1,7 +1,16 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #000, #8c52ff);
+     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.raya{
+	background-color: #2B3499 ;
+	height: 5px;
+	border:none;
+}
+.seccion-fondo {
+   background: linear-gradient(to bottom, #000, #8c52ff);
     color: white;
     display: flex;
     flex-direction: column;
@@ -11,16 +20,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.raya{
-	background-color: #2B3499 ;
-	height: 5px;
-	border:none;
-}
-.seccion-fondo {
-    background-color: #FFEFDC ;
-    background-position: center;
-    text-align: center;
     
 }
 
