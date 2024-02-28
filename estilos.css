@@ -10,9 +10,8 @@ body {
 	border:none;
 }
 .seccion-fondo {
-    background-color: #FFEFDC ;
-    background-position: center;
-    text-align: center;
+background-image: linear-gradient(to right, #9C00B5, #000000);
+text-align: center;
     
 }
 
