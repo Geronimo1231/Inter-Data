@@ -27,16 +27,16 @@ section {
 
 h1{
     font-size: 36px;
-    color: #FFFFFF;
+    color: white;
 }
 h2 {
     font-size: 36px;
-    color: #FFFFFF;
+    color: white;
 }
 
 p {
     font-size: 18px;
-    color: #FFFFFF;
+    color: white;
 }
 .raya{
 	background-color: #C7C7C7 ;
@@ -47,8 +47,7 @@ header {
     background: linear-gradient(to right, #6a0dad, #000);
     color: white;
     padding: 20px 0;
-	
-	display: flex;
+    display: flex;
     justify-content: space-between;
     position: relative;
 }
@@ -81,8 +80,7 @@ header nav li {
     padding-top: 3rem;
 }
 .logo img {
-	text-align: center;
-    flex-basis: 150px;
+max-width: 150px;
 	
 }
 nav {
