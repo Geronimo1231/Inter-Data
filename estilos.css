@@ -25,18 +25,14 @@ section {
     text-align: center;
 }
 
-h1{
+h1, h2 {
     font-size: 36px;
-    color: white;
-}
-h2 {
-    font-size: 36px;
-    color: white;
+    color: #FFFFFF;
 }
 
 p {
     font-size: 18px;
-    color: white;
+    color: #FFFFFF;
 }
 .raya{
 	background-color: #C7C7C7 ;
@@ -80,8 +76,17 @@ header nav li {
     padding-top: 3rem;
 }
 .logo img {
-max-width: 150px;
+max-width: 100px;
 	
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    z-index: 100;
 }
 nav {
             float: left;
