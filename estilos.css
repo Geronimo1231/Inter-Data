@@ -81,8 +81,8 @@ header nav li {
     padding-top: 3rem;
 }
 .logo img {
-text-align: center;
-flex-basis: 150px;
+	text-align: center;
+    flex-basis: 150px;
 	
 }
 nav {
