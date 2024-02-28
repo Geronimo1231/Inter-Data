@@ -1,25 +1,17 @@
 /* Estilos generales */
 body {
-     font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 .raya{
-	background-color: #2B3499 ;
+	background-color: #AA1EFF ;
 	height: 5px;
 	border:none;
 }
 .seccion-fondo {
-   background: linear-gradient(to bottom, #000, #8c52ff);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   background-image: linear-gradient(to right, #9C00B5, #000000);
+   text-align: center;
     
 }
 
@@ -54,7 +46,7 @@ nav ul li a {
 
 /* Estilos de llamado a la acción (CTA) */
 .btn-cta {
-    background-color: #5A0076;
+    background-color: #AA1EFF;
     color: white;
     padding: 0.5rem 1rem;
     border: none;
