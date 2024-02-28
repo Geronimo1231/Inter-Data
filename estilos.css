@@ -24,7 +24,10 @@ section {
     padding: 3rem 0;
     text-align: center;
 }
-
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
 h1, h2 {
     font-size: 36px;
     color: #FFFFFF;
