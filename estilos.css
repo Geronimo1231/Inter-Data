@@ -35,6 +35,7 @@ header {
 
 .logo img {
     max-width: 150px;
+	height: auto;
 }
  .redes-sociales {
             position: fixed;
@@ -72,6 +73,7 @@ nav ul {
 }
 
 nav ul li {
+  display: inline;
   margin-right: 20px;
 }
 
@@ -80,6 +82,7 @@ nav ul li a {
   text-decoration: none;
   padding: 8px 15px; /* Espaciado interno del botón */
   border-radius: 5px;
+   font-weight: bold;
   background-color: #FFFFFF;; /* Color de fondo del botón */
   transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
@@ -107,7 +110,7 @@ nav ul li a {
 /* Estilos de llamado a la acción (CTA) */
 .btn-cta {
     display: inline-block;
-    background-color: #FF6C22;
+    background-color: #79C7ff;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -118,17 +121,32 @@ nav ul li a {
 
 /* Estilos de secciones, títulos y listas */
 section {
-    padding: 3rem 0;
+     padding: 20px;
   
 	 color: #EBBF0C;
 }
+.seccion {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
 
+.valores-lista {
+    padding-left: 0;
+    list-style: none;
+}
+
+.valor {
+    margin-bottom: 20px;
+}
 h1, h2 {
+	text-align: center;
     font-size: 36px;
     color: #79C7ff;
 }
 
 p {
+	text-align: justify;
     font-size: 18px;
     color: #EBBF0C;
 }
