@@ -34,10 +34,9 @@ header {
 	
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1)
 }
-
 .logo img {
-    height: 5.0px;
-    filter: brightness(0) invert(1);
+    max-width: 150px;
+	height: auto;
 }
  .redes-sociales {
             position: fixed;
